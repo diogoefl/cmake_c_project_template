@@ -1,3 +1,16 @@
+# SPDX Data information
+# SPDXVersion: SPDX-2.1
+# DataLicense: CC0-1.0
+# PackageName: CMake C Project Template
+# PackageOriginator: diogoefl
+# PackageHomePage: https://github.com/diogoefl/cmake_c_project_template/
+# PackageLicenseDeclared: BSD-3-Clause
+
+# All files on this project follows this license, unless otherwise told
+#
+# Copyright (c) 2023, diogoefl
+# SPDX-License-Identifier: BSD-3-Clause
+
 BSD 3-Clause License
 
 Copyright (c) 2023, Diogo Ferreira

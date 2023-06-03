@@ -1,0 +1,72 @@
+{
+  "version": 4,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 23,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "ninja multi",
+      "displayName": "Ninja Config",
+      "description": "Ninja generator",
+      "generator": "Ninja Multi-Config",
+      "binaryDir": "${sourceDir}/_out/ci_ninja_$env{TOOLCHAIN}/build",
+      "cacheVariables": {
+        "CMAKE_C_COMPILER": "clang",
+        "CMAKE_CXX_COMPILER": "clang++",
+        "CMAKE_CONFIGURATION_TYPES": "Debug;Release",
+        "CMAKE_DEFAULT_BUILD_TYPE": "Debug",
+        "CMAKE_INSTALL_PREFIX": "${sourceDir}/_out/ci_ninja_$env{TOOLCHAIN}/install/$env{BUILD_TYPE}",
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+      },
+      "environment": {
+        "TOOLCHAIN": "clang"
+      }
+    }
+],
+"buildPresets": [
+    {
+      "name": "debug - incremental",
+      "configurePreset": "ninja multi",
+      "configuration": "Debug",
+      "environment": {
+        "BUILD_TYPE": "debug"
+      }
+    },
+    {
+      "name": "release - incremental",
+      "configurePreset": "ninja multi",
+      "configuration": "Release",
+      "environment": {
+        "BUILD_TYPE": "release"
+      }
+    },
+    {
+      "name": "debug - clean first",
+      "configurePreset": "ninja multi",
+      "cleanFirst": true,
+      "configuration": "Debug",
+      "environment": {
+        "BUILD_TYPE": "debug"
+      }
+    },
+    {
+      "name": "release - clean first",
+      "configurePreset": "ninja multi",
+      "cleanFirst": true,
+      "configuration": "Release",
+      "environment": {
+        "BUILD_TYPE": "release"
+      }
+    }
+  ],
+  "testPresets": [
+    {
+      "name": "default",
+      "configurePreset": "ninja multi",
+      "output": {"outputOnFailure": true},
+      "execution": {"noTestsAction": "error", "stopOnFailure": true}
+    }
+  ]
+}
