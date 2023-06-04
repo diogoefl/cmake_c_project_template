@@ -20,6 +20,10 @@ See [license](./LICENSE) at this project root for more detailed information
 
 - Adjust vendor example
 
+### Added
+
+- Refactor folder structure
+
 ## [0.0.2] - 2023-06-03
 
 ### Added

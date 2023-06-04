@@ -12,7 +12,7 @@ project(template_c_project
 
 # Adding project example library
 add_library(project_lib STATIC
-            "src/project/project_lib.c")
+            "src/project_lib.c")
 
 set_property(TARGET project_lib PROPERTY C_STANDARD          23 )
 set_property(TARGET project_lib PROPERTY C_STANDARD_REQUIRED ON )
@@ -41,7 +41,7 @@ target_link_libraries(project_main
 # Adding project lib testing
 enable_testing()
 add_executable(project_lib_test
-               "test/project/lib/project_lib_add9_test.c")
+               "test/project_lib_add9_test.c")
 
 set_property(TARGET project_lib_test PROPERTY C_STANDARD          23)
 set_property(TARGET project_lib_test PROPERTY C_STANDARD_REQUIRED ON)

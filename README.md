@@ -21,7 +21,6 @@ See [license](./LICENSE) at this project root for more detailed information
 - CamelCase naming convention for structs naming
 - snake_case naming convention for typedef added suffix _t
 - snake_case naming convention for CMake data
-- folder separation for namespacing (avoinding conflicts)
 - file naming containing namespace with snake_case
 - exception to folder location is main.h and main.c that are located directly on src and include folders
 

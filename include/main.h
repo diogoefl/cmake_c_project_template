@@ -12,6 +12,6 @@
 #ifndef PROJECT_MAIN_H
 #define PROJECT_MAIN_H
 
-#include "project/project_lib.h"
+#include "project_lib.h"
 
 #endif /* PROJECT_MAIN_H */

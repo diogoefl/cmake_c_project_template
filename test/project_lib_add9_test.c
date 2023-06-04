@@ -10,7 +10,7 @@
 #include <stdint.h>
 #include <stdio.h>
 
-#include "project/project_lib.h"
+#include "project_lib.h"
 
 void test_1(void)
 {
