@@ -12,7 +12,12 @@
 #ifndef PROJECT_LIB_H
 #define PROJECT_LIB_H
 
-// Log example information
+#include <stdint.h>
+
+/* Log example information */
 void project_lib_io_some_log(void);
+
+/* Simple math function to use on CTest */
+int64_t project_lib_add9(const int64_t input);
 
 #endif /* PROJECT_LIB_H */

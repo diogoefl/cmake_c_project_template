@@ -18,8 +18,13 @@ See [license](./LICENSE) at this project root for more detailed information
 
 ### To do
 
-- Add CTest
 - Adjust vendor example
+
+## [0.0.2] - 2023-06-03
+
+### Added
+
+- Add CTest
 
 ## [0.0.1] - 2023-06-03
 
@@ -35,3 +40,4 @@ See [license](./LICENSE) at this project root for more detailed information
 - Added simple UTF-8 example for log
 
 [0.0.1]: https://github.com/diogoefl/cmake_c_project_template/releases/tag/v0.0.1
+[0.0.2]: https://github.com/diogoefl/cmake_c_project_template/releases/tag/v0.0.2
